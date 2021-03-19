@@ -1,9 +1,14 @@
 import React from 'react';
 
-const Todo = () => {
+const Todo = ({text, todos, setTodos}) => {
+
+    // Events
+    const deleteHandler = () => {
+
+    }
     return(
         <div className="todo">
-            <li className="todo-item">heyyy</li>
+            <li className="todo-item">{text}</li>
 
             <button className="complete-btn">
                 <i className="fas fa-check"></i>
