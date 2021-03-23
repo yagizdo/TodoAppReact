@@ -7,6 +7,7 @@
 - [x] Filter
 - [x] ToDo Check
 - [x] ToDo Delete
+- [x] Check empty input
 
 ##  What will be add :question:
 - [ ] Cache

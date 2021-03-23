@@ -7,18 +7,25 @@
     };
     const submitTodoHandler = (e) => {
       e.preventDefault();
+if(inputText === ""){
+  alert("You need to type something in input")
+}
+     else{
       setTodos([
         ...todos, {text: inputText, completed : false, id: Math.random() *1000 }
       ]);
       setInputText("");
+     }
     };
 
       const statusHandler = (e) => {
         setStatus(e.target.value);
       }
+
+      
       return(
   <form>
-        <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
+        <input value={inputText} onChange={inputTextHandler} placeholder="Ex : Do Homework" type="text" className="todo-input" />
         <button onClick={submitTodoHandler} className="todo-button" type="submit">
           <i className="fas fa-plus-square"></i>
         </button>

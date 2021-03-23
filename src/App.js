@@ -11,12 +11,6 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([]);
-
-    // Use Effect
-    useEffect(() => {
-      filterHandler();
-    },[todos,status]);
-
   // Functions
   const filterHandler = () => {
     switch(status) {
@@ -30,6 +24,12 @@ function App() {
       break;
     } 
   }
+    // Use Effect
+    useEffect(() => {
+      filterHandler();
+    },[todos,status]);
+
+
   return (
     <div className="App">
       <header>
