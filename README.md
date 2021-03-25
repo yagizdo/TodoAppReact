@@ -8,8 +8,9 @@
 - [x] ToDo Check
 - [x] ToDo Delete
 - [x] Check empty input
+- [x] Cache
 
 ##  What will be add :question:
-- [ ] Cache
+
 
 Enjoy :boom:
